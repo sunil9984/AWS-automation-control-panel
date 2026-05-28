@@ -1,16 +1,45 @@
-# React + Vite
+AWS Automation Control Panel — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend dashboard for managing automated Docker deployments and monitoring deployment status in real time.
 
-Currently, two official plugins are available:
+Built using React + Vite with a modern responsive UI.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Features
+🎨 Modern deployment dashboard UI 📦 Client onboarding form ⚡ Deployment status tracking 📜 Deployment logs viewer 🔄 Automatic polling updates 🌐 API integration with backend 📱 Responsive design
 
-## React Compiler
+Tech Stack
+React.js Vite CSS3 Fetch API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Folder Structure----
+frontend/ │ ├── src/ │ ├── components/ │ │ ├── DeploymentList.jsx │ │ ├── OnboardingForm.jsx │ │ └── *.css │ │ │ ├── App.jsx │ ├── main.jsx │ └── App.css │ ├── package.json └── vite.config.js
 
-## Expanding the ESLint configuration
+⚙️ Installation You can also install this project on yout local machine git clone https://github.com/YOUR_USERNAME/aws-automation-control-panel.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Navigate to Frontend
+cd frontend
+
+Install Dependencies
+npm install
+
+Start Development Server
+npm run dev
+
+#Backend API Configuration const API_BASE = 'https://your-backend-url.onrender.com/api';
+
+🎯 Features Overview Client Deployment Form
+
+Allows admin to:
+
+Enter client name Configure custom domain Select Docker image
+
+#Deployment Dashboard
+
+Displays: Deployment status Docker progress Lambda invocation state Deployment logs
+📦 Build for Production npm run build
+
+🚀 Deploy Frontend
+
+Recommended platforms:
+
+Vercel Netlify 📸 UI Preview
+
